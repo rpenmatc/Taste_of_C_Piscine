@@ -6,7 +6,7 @@
 /*   By: rpenmatc <rpenmatc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/30 14:38:30 by rpenmatc          #+#    #+#             */
-/*   Updated: 2018/07/30 17:32:28 by rpenmatc         ###   ########.fr       */
+/*   Updated: 2018/07/31 16:03:38 by rpenmatc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@ int		ft_is_sort(int *tab, int length, int (*f)(int, int))
 	int		i;
 
 	i = 0;
-	while ((i + 1) < length)
+	while (i + 1 < length)
 	{
-		if (f(tab[i + 1], tab[i]) < 0)
+		if (f(tab[i + 1], tab[i]) > 0)
 			return (0);
 		i++;
 	}

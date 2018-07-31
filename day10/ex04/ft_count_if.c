@@ -6,7 +6,7 @@
 /*   By: rpenmatc <rpenmatc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/30 14:32:11 by rpenmatc          #+#    #+#             */
-/*   Updated: 2018/07/30 14:35:27 by rpenmatc         ###   ########.fr       */
+/*   Updated: 2018/07/31 16:00:29 by rpenmatc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_count_if(char **tab, int (*f)(char*))
 	count = 0;
 	while (tab[i++])
 	{
-		if (f(tab[i]) == 1)
+		if (f(tab[i]))
 			count++;
 	}
 	return (count);
