@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp .c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rpenmatc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rpenmatc <rpenmatc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/18 11:11:04 by rpenmatc          #+#    #+#             */
-/*   Updated: 2018/07/18 11:11:18 by rpenmatc         ###   ########.fr       */
+/*   Updated: 2018/07/31 15:49:35 by rpenmatc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_strcmp(char *s1, char *s2)
 {
-	while (*s1 && (*s1 == *s2))
+	int i;
+
+	i = 0;
+	while (s1[i] || s2[i])
 	{
-		s1 += 1;
-		s2 += 1;
+		if (s1[i] < s2[i])
+			return (-1);
+		if (s1[i] > s2[i])
+			return (1);
+		i++;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	return (0);
 }
