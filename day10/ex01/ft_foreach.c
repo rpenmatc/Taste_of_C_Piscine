@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rpenmatc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rpenmatc <rpenmatc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/30 14:18:37 by rpenmatc          #+#    #+#             */
-/*   Updated: 2018/07/30 14:18:39 by rpenmatc         ###   ########.fr       */
+/*   Updated: 2018/07/31 15:52:25 by rpenmatc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,6 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 
 	i = 0;
 	while (i < length)
-		f(tab[i++]);
+		f(tab[i]);
+		i++;
 }
