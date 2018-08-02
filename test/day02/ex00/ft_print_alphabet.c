@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   match.c                                            :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rpenmatc <rpenmatc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/30 10:50:13 by rpenmatc          #+#    #+#             */
-/*   Updated: 2018/08/01 10:01:32 by rpenmatc         ###   ########.fr       */
+/*   Created: 2018/08/01 13:29:15 by rpenmatc          #+#    #+#             */
+/*   Updated: 2018/08/01 13:33:39 by rpenmatc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		match(char *s1, char *s2)
+#include <unistd.h>
+void    ft_putchar(char c)
 {
-	if (*s1 == *s2 && *s1 == '\0' && *s2 == '\0')
-		return (1);
-	if (*s1 != '\0' && *s2 == '*')
-		return (match(s1 + 1, s2) || match(s1, s2 + 1));
-	if (*s1 == '\0' && *s2 == '*')
-		return (match(s1, s2 + 1));
-	if (*s1 == *s2 && *s1 != '\0' && *s2 != '\0')
-		return (match(s1 + 1, s2 + 1));
-	return (0);
+    write(1, &c, 1);
+}
+
+void    ft_print_alphabet(void)
+{
+    int     i;
+
+    i = 'a';
+    while (i <= 'z')
+    {
+        ft_putchar(i++);
+    }
+}
+
+int main()
+{
+    ft_print_alphabet();
 }
