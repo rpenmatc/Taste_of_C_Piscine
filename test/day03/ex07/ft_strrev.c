@@ -1,36 +1,27 @@
-int     ft_strlen(*str)
+int		ft_strlen(char *str)
 {
-    int     i;
+	int i;
 
-    i = 0;
-    while (*str !- '\0')
-    {
-        str++;
-        i++;
-    }
-    return (i);
+	i = 0;
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	return (i);
 }
 
-char    *ft_strrev(char *str)
+char	*ft_strrev(char *str)
 {
-    int     *start;
-    int     *end;
-    int     temp;
-
-    *start == str;
-    *end = str + ft_strlen(str) - 1;
-    while (end > str)
-    {
-        temp = *start
-        *start = *end;
-        *end = temp;
-        str++;
-        end--;
-    }
-    return (str);
-}
-
-int main()
-{
-    ft_strrev("abba");
+	char * start = str;
+	char * end = str + ft_strlen(str) - 1;
+	while (end > start)
+	{
+		char temp = *start;
+		*start = *end;
+		*end = temp;
+		start++;
+		end--;
+	}
+	return (str);
 }
