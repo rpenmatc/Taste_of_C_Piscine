@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kagarwal <kagarwal@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rpenmatc <rpenmatc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/23 10:21:03 by kagarwal          #+#    #+#             */
 /*   Updated: 2018/07/24 10:03:34 by kagarwal         ###   ########.fr       */
