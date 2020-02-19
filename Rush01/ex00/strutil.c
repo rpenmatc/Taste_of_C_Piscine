@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   strutil.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kagarwal <kagarwal@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rpenmatc <rpenmatc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/23 10:21:08 by kagarwal          #+#    #+#             */
 /*   Updated: 2018/07/24 09:59:42 by kagarwal         ###   ########.fr       */
